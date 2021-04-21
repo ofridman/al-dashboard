@@ -457,9 +457,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6765626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f084960cb5bcdf346a1d7181c2842be6, type: 3}
+  m_Script: {fileID: 11500000, guid: a7a59703ea0b2714687970d8c2e841e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  blockSprite: {fileID: 21300000, guid: ab767e50496365948b5509b5c87e4af4, type: 3}
+  container: {fileID: 1049706735}
+  template: {fileID: 1787711517}
+  titleText: {fileID: 672117736}
+  eventEditorWindow: {fileID: 1386488599}
+  timeBlocks: []
 --- !u!225 &6765629
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -898,7 +908,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -911,8 +921,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -3684,9 +3694,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 66240828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f8ec7b236717cc42adf39f5e8972d27, type: 3}
+  m_Script: {fileID: 11500000, guid: a0be54e41c57ed94caedc9786cb708c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  quizListEntryPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
+  quizListScrollRect: {fileID: 1300350528}
 --- !u!114 &66240832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7674,7 +7690,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -7687,8 +7703,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -8156,7 +8172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -26.101105}
+  m_AnchoredPosition: {x: 0, y: -26.101074}
   m_SizeDelta: {x: -44.3, y: -115.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &162186508
@@ -9159,9 +9175,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 183106862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 680ce980056c5d040ae65f2944bc7509, type: 3}
+  m_Script: {fileID: 11500000, guid: 68499049e32db8d4da3803d5aea4b82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dateLabel: {fileID: 0}
+  background: {fileID: 0}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  todayColor: {r: 1, g: 0.36320752, b: 0.36320752, a: 1}
+  outlineObj: {fileID: 0}
 --- !u!114 &183106868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10855,9 +10876,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 230321737}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9dc55c0b7cc3c2141a059b96eb667c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: 
 --- !u!114 &230321740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12468,9 +12490,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 266928928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 397ce0db2087d5d4fa05616a3ce8ab74, type: 3}
+  m_Script: {fileID: 11500000, guid: 536eb80942f986245b0605b80422bb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  listEntryPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
+  correctScrollRect: {fileID: 961148721}
+  wrongScrollRect: {fileID: 1742943552}
+  questionField: {fileID: 55599739}
 --- !u!1 &269162618
 GameObject:
   m_ObjectHideFlags: 0
@@ -12779,7 +12809,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -12792,8 +12822,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 2
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -13974,7 +14004,7 @@ RectTransform:
   m_Father: {fileID: 923033804}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.1554305}
+  m_AnchorMin: {x: 0, y: 0.15509349}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -14255,7 +14285,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -26.101105}
+  m_AnchoredPosition: {x: 0, y: -26.101074}
   m_SizeDelta: {x: -44.3, y: -115.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311591059
@@ -15382,7 +15412,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -15396,7 +15426,7 @@ MonoBehaviour:
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
-  m_textAlignment: 257
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -17832,9 +17862,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 374990588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9dc55c0b7cc3c2141a059b96eb667c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: 
 --- !u!114 &374990591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19937,9 +19968,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 405747169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9dc55c0b7cc3c2141a059b96eb667c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: 
 --- !u!114 &405747172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20031,7 +20063,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 405747169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04de669506306ad4c938c4204fa0b550, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e403732a44ddd04f9b5b685820602a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &406553623
@@ -20149,7 +20181,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -20162,8 +20194,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -23853,9 +23885,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 495888939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71ffa506e6807e449af2bd41d9445190, type: 3}
+  m_Script: {fileID: 11500000, guid: fd21a1816b32ffd41b5282e7abf59589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  scrollRect: {fileID: 1486421623}
+  themeNameField: {fileID: 205101586}
+  levelSelectStyleDropdown: {fileID: 1319616381}
+  lessonAreaStyleDropdown: {fileID: 1247762195}
+  backgroundDropdown: {fileID: 889024400}
+  laptopPreviewBG: {fileID: 542238098}
+  laptopPreviewOverlay: {fileID: 2012965370}
+  lessonAreaPreview: {fileID: 564380124}
+  laptopOverlays: []
+  lessonAreaScreenshots: []
+  laptopDefaultBG: {fileID: 0}
 --- !u!225 &495888944
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -25101,9 +25148,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -7, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &520037154
 MonoBehaviour:
@@ -28479,7 +28526,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -28492,8 +28539,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -29304,7 +29351,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -29317,8 +29364,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -29368,9 +29415,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 627366462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9dc55c0b7cc3c2141a059b96eb667c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: 
 --- !u!1 &628694937
 GameObject:
   m_ObjectHideFlags: 0
@@ -30885,7 +30933,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -30898,8 +30946,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -31019,7 +31067,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -31032,8 +31080,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -31408,7 +31456,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -31421,8 +31469,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -33300,7 +33348,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -33313,8 +33361,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -33364,9 +33412,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 722486865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: abe02588cca16964c8571b21eefea5d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: Your team name
+  tooltipPositioningType: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &723081212
 GameObject:
   m_ObjectHideFlags: 0
@@ -33940,9 +33991,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 733962491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83ba137340f40734aa57be8cb1b01d58, type: 3}
+  m_Script: {fileID: 11500000, guid: dd7e514c423b7494292f7968df41aab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  assignmentListEntryPrefab: {fileID: 4942686934041070941, guid: b3db2c3d2c1867c48a55bbe49d133dcd, type: 3}
+  assignmentsScrollRect: {fileID: 1795277433}
+  assignmentListWindow: {fileID: 1316945315}
+  nameField: {fileID: 61474605}
+  memberListWindow: {fileID: 1132975870}
+  memberScrollRect: {fileID: 1923294882}
 --- !u!225 &733962496
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -34034,7 +34095,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -34047,8 +34108,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -34168,7 +34229,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -34180,9 +34241,9 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 1026
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 1024
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -35410,7 +35471,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 301280038}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.8445695
+  m_Size: 0.8449065
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -35649,9 +35710,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 785187609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f51c3af0033394ba21fc545a42cb89, type: 3}
+  m_Script: {fileID: 11500000, guid: bec9eda5463a912449b1008dfb3db54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dayContainer: {fileID: 898111445}
+  calendarDays: []
+  monthYearLabel: {fileID: 111892066}
+  template: {fileID: 183106862}
+  dayViewWindow: {fileID: 6765628}
+  teamEventEditor: {fileID: 1386488599}
+  editEventsButton: {fileID: 1589583372}
+  editEventsDayLabel: {fileID: 1702225848}
 --- !u!1 &789078413
 GameObject:
   m_ObjectHideFlags: 0
@@ -36452,9 +36521,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 808578109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2117269b692d324499cd82fb0259fe3, type: 3}
+  m_Script: {fileID: 11500000, guid: 10cf1c3536793fd499dab57e4f760d7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  listContainer: {fileID: 1954318134}
+  listPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
 --- !u!225 &808578112
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -36946,7 +37021,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -36959,8 +37034,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -37120,7 +37195,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -37749,7 +37824,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -24.639587}
+  m_AnchoredPosition: {x: 0, y: -24.639648}
   m_SizeDelta: {x: 10, y: -24.64}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &846050350
@@ -38775,7 +38850,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -38788,8 +38863,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -39201,9 +39276,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 875148638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 494aa33683bf30940a925f48915aa049, type: 3}
+  m_Script: {fileID: 11500000, guid: 4db0892d0cd5f76438617d1fafadba9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  levelNameField: {fileID: 810210160}
+  levelDescriptionField: {fileID: 377549022}
+  lessonsScrollRect: {fileID: 438633720}
+  quizzesScrollRect: {fileID: 174347463}
+  lessonListPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
+  quizListPrefab: {fileID: 5876420157521669088, guid: 0d28ab7a25517fc45979d68ce7b9b7ee, type: 3}
+  lessonEditorWindow: {fileID: 1010466454}
+  quizPickerWindow: {fileID: 66240831}
 --- !u!225 &875148643
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -39883,7 +39970,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -39896,8 +39983,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -40652,7 +40739,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -40665,8 +40752,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -42007,8 +42094,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 505.175, y: 0}
+  m_SizeDelta: {x: 926.35, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &922506614
 MonoBehaviour:
@@ -46066,9 +46153,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1010466450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abc844f04a2642f4c99c9007c9292876, type: 3}
+  m_Script: {fileID: 11500000, guid: 690e6ebe42dbd8743b7de6580bf15193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  placeholderVideoUrl: https://www.w3schools.com/tags/movie.mp4
+  lessonNameField: {fileID: 150258281}
+  lessonDescriptionField: {fileID: 750257253}
+  videoFileDropdown: {fileID: 1196580537}
+  quizToggle: {fileID: 823580878952984759}
+  quizDropdown: {fileID: 871566745}
+  badgeToggle: {fileID: 374731668}
+  badgeDropdown: {fileID: 1774917419}
+  previewButton: {fileID: 269162620}
 --- !u!225 &1010466455
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -46436,7 +46536,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -46449,8 +46549,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -49171,9 +49271,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1084663795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9dc55c0b7cc3c2141a059b96eb667c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: 
 --- !u!114 &1084663798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51028,9 +51129,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1132975868}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b65f269d511cb24a95c668010344276, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b4ea9c2ac4f140468e6addf0b8d2164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  memberListEntryPrefab: {fileID: 8206206968416297001, guid: 6a08e53048a7c5e4a90806315b0703d4, type: 3}
+  listContainer: {fileID: 313289572}
+  groupEditorWindow: {fileID: 733962495}
 --- !u!225 &1132975871
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -51275,9 +51383,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1134553358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 685bcb543d6b27e41b30af7e1ebc1534, type: 3}
+  m_Script: {fileID: 11500000, guid: 16bdec5a4d930244fa6ab76d1c74d773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  levelListEntryPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
+  scrollRect: {fileID: 88151286}
+  levelEditorWindow: {fileID: 875148642}
 --- !u!114 &1134553362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52094,9 +52209,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1154666340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9dc55c0b7cc3c2141a059b96eb667c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: 
 --- !u!114 &1154666343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52694,7 +52810,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -52708,7 +52824,7 @@ MonoBehaviour:
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
-  m_textAlignment: 257
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -53978,7 +54094,31 @@ MonoBehaviour:
   highlight: {fileID: 1420218936}
   OnTabActivated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1617633218}
+        m_TargetAssemblyTypeName: Screen_InstructorDecks, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1364259829}
+        m_TargetAssemblyTypeName: Screen_Courses, Assembly-CSharp
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1195164312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54744,9 +54884,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1211998688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f5c3a8cb577a64a83a63f8fc2b4160, type: 3}
+  m_Script: {fileID: 11500000, guid: f6750db3918935341bdf94948628cc8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  badgeListScrollRect: {fileID: 492915393}
+  badgeEntryPrefab: {fileID: 5876420157521669088, guid: 0d28ab7a25517fc45979d68ce7b9b7ee, type: 3}
+  BadgeEditorWindow: {fileID: 1956952741}
+  titleLabel: {fileID: 1907619309}
 --- !u!1 &1217884653
 GameObject:
   m_ObjectHideFlags: 0
@@ -54826,7 +54970,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -54840,7 +54984,7 @@ MonoBehaviour:
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
-  m_textAlignment: 257
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -55741,9 +55885,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1233415716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 517a33794fb4bf94d9e887c1b6e505b1, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ed1ccee74ff91f4b941d927410c9cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1233415718}
 --- !u!114 &1233415720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55939,7 +56084,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -55952,8 +56097,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -58674,9 +58819,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1309315743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9dc55c0b7cc3c2141a059b96eb667c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: 
 --- !u!114 &1309315746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58768,7 +58914,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1309315743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04de669506306ad4c938c4204fa0b550, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e403732a44ddd04f9b5b685820602a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1309592731
@@ -59253,9 +59399,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1316945312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38ff06534b7d7e949ba670bf8d37c0f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 67e8fb3d40a9a784facc7bc14cc509ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  assignmentListEntryPrefab: {fileID: 4942686934041070941, guid: b3db2c3d2c1867c48a55bbe49d133dcd, type: 3}
+  assignmentListScrollRect: {fileID: 1283983870}
 --- !u!114 &1316945316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59894,9 +60046,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1323911993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37caff9a888e3e3488e69186c06e5a9b, type: 3}
+  m_Script: {fileID: 11500000, guid: dc19891144b930844a9b4f3cc7f04cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quizListEntryPrefab: {fileID: 7517204021741182735, guid: f312da1943b0ba04489a2ca7e67ee1d0, type: 3}
+  quizListScrollRect: {fileID: 127246891}
+  quizEditorWindow: {fileID: 2038108975}
+  listEntryIcon: {fileID: 0}
 --- !u!114 &1323911996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60140,7 +60296,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -60153,8 +60309,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 2
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -61971,7 +62127,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -61984,8 +62140,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -62579,7 +62735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   courseListScrollRect: {fileID: 7454589498010668100}
   courseEntryPrefab: {fileID: 5876420157521669088, guid: 0d28ab7a25517fc45979d68ce7b9b7ee, type: 3}
-  courseEditorWindow: {fileID: 0}
+  courseEditorWindow: {fileID: 3810621640052473795}
 --- !u!1 &1366634106
 GameObject:
   m_ObjectHideFlags: 0
@@ -62705,9 +62861,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1373844780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 164bd37f461b4be49a18934fc1142c9f, type: 3}
+  m_Script: {fileID: 11500000, guid: d5bf36741e885ea4fb2e94e0ba90d0f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titleLabel: {fileID: 2067322164}
+  memberEntryPrefab: {fileID: 8203909518816280398, guid: cdc5bcea20d865a4bade14c24f45b418, type: 3}
+  memberListScrollRect: {fileID: 6295492539111513303}
+  memberNameLabel: {fileID: 1902148612}
+  userProfilePicture: {fileID: 2110453558}
+  memberRank: {fileID: 5643078320282879188}
+  assignmentScrollRect: {fileID: 15759067369455637}
+  groupListScrollRect: {fileID: 341205422}
+  assignmentListEntryPrefab: {fileID: 4942686934041070941, guid: b3db2c3d2c1867c48a55bbe49d133dcd, type: 3}
+  inviteMemberWindow: {fileID: 1707061324}
+  invitedSprite: {fileID: 0}
+  assignmentPicker: {fileID: 1316945315}
 --- !u!1 &1375676903
 GameObject:
   m_ObjectHideFlags: 0
@@ -62926,9 +63094,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1385508018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e1a1137c8c03e419271b2c4cdef93a, type: 3}
+  m_Script: {fileID: 11500000, guid: 87d6b53d51ef97c41b944b80de6b8752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  listContainer: {fileID: 70536209}
+  listPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
 --- !u!225 &1385508021
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -63029,9 +63203,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1386488597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e4a90559b36472428db3ab3ed3f4d3b, type: 3}
+  m_Script: {fileID: 11500000, guid: a383049ecb166944c87e969978f5fc4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  nameField: {fileID: 1631603012}
+  locationField: {fileID: 848079201}
+  detailsField: {fileID: 759550198}
+  allDayEvent: {fileID: 829138848}
+  startDateField: {fileID: 572909649}
+  endDateField: {fileID: 1137338038}
+  createEventSection: {fileID: 910723309}
 --- !u!225 &1386488600
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -65044,7 +65229,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -65057,8 +65242,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -65134,7 +65319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -26.101105}
+  m_AnchoredPosition: {x: 0, y: -26.101074}
   m_SizeDelta: {x: -44.3, y: -115.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432007579
@@ -65512,9 +65697,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1440467278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6d9f361703eb7248938b1f17b9bfd21, type: 3}
+  m_Script: {fileID: 11500000, guid: b543572667c257b47b9a644031fc1537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  videoPreviewContainer: {fileID: 212527472}
+  imagePreviewContainer: {fileID: 1857740481}
+  videoPlayer: {fileID: 512382123}
+  imagePreview: {fileID: 1289520034}
+  videoPreview: {fileID: 306289944}
+  videoControlsContainer: {fileID: 1048844338}
+  playBtnSprite: {fileID: 21300000, guid: b027a162581976f4d9d122778b1e3d09, type: 3}
+  pauseBtnSprite: {fileID: 21300000, guid: 5c722e4c0fd3bc14dbf4b59bb7ebc96c, type: 3}
+  playButtonGraphics: {fileID: 2107461983}
+  videoScrubber: {fileID: 2489056173248868713}
 --- !u!225 &1440467281
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -66130,7 +66329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -26.101105}
+  m_AnchoredPosition: {x: 0, y: -26.101074}
   m_SizeDelta: {x: -44.3, y: -115.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455447304
@@ -68180,8 +68379,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1598873925}
   m_HandleRect: {fileID: 1598873924}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.690622
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -69070,7 +69269,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -69083,8 +69282,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -70304,7 +70503,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -70316,9 +70515,9 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 1026
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 1024
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -70571,7 +70770,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -70585,7 +70784,7 @@ MonoBehaviour:
   m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
-  m_textAlignment: 257
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -71549,8 +71748,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 2
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -73612,9 +73811,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1617633216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdd2a78e49f886242b00d4d3c43ab683, type: 3}
+  m_Script: {fileID: 11500000, guid: 3557eca443781434ea706211d09e1554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deckListScrollRect: {fileID: 892341451}
+  listEntryPrefab: {fileID: 7332743119597471818, guid: 5c7369c7c7d4d2042a8cb92b67f92b9a, type: 3}
+  deckEditor: {fileID: 1976624521}
 --- !u!114 &1617633219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73736,9 +73938,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1618626989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4951b2ca08876984ea7758cb8f6826e3, type: 3}
+  m_Script: {fileID: 11500000, guid: a6596d056dfc3d54b9450f63f9a8597d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playButton: {fileID: 1334109277}
+  playSprite: {fileID: 21300000, guid: b027a162581976f4d9d122778b1e3d09, type: 3}
+  pauseSprite: {fileID: 21300000, guid: 5c722e4c0fd3bc14dbf4b59bb7ebc96c, type: 3}
+  slider: {fileID: 7035820997804074098}
+  aspectFitter: {fileID: 789963148}
 --- !u!1 &1619810820
 GameObject:
   m_ObjectHideFlags: 0
@@ -73863,9 +74070,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1623616901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45833b205ea4ff47b1516263e83b7d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9dc55c0b7cc3c2141a059b96eb667c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: Branding Icon
 --- !u!114 &1623616904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74224,7 +74432,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -74237,8 +74445,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -75883,7 +76091,7 @@ RectTransform:
   m_Father: {fileID: 476792709}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.26022357}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -76901,9 +77109,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707061319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5336ecccade79f42ac0e8e56fdeb91d, type: 3}
+  m_Script: {fileID: 11500000, guid: a7e930e6a16d3814296df4750f92bd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  emailField: {fileID: 1478590562}
+  memberScreen: {fileID: 1373844784}
 --- !u!1 &1709606083
 GameObject:
   m_ObjectHideFlags: 0
@@ -77980,7 +78194,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -77994,7 +78208,7 @@ MonoBehaviour:
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
-  m_textAlignment: 257
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -78683,7 +78897,19 @@ MonoBehaviour:
   highlight: {fileID: 542013137}
   OnTabActivated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1364259829}
+        m_TargetAssemblyTypeName: Screen_Courses, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1739476255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78821,7 +79047,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -78834,8 +79060,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -79206,9 +79432,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1747938564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40a5cb3b4c4590240b7045fbea7d3796, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f90bf1fe7bfdd5408ac0e9c529411db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrollRect: {fileID: 183629744}
+  listEntryPrefab: {fileID: 7332743119597471818, guid: 5c7369c7c7d4d2042a8cb92b67f92b9a, type: 3}
+  filePreviewWindow: {fileID: 1440467280}
+  fileUploadDialog: {fileID: 2058513287}
 --- !u!1 &1758931305
 GameObject:
   m_ObjectHideFlags: 0
@@ -80942,9 +81172,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1807152383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e40805c3ac66144bd24289a322a0a5, type: 3}
+  m_Script: {fileID: 11500000, guid: a3a24f8f521a6024c90b142396e3f9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  urlField: {fileID: 1168181937}
 --- !u!114 &1807152386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81716,7 +81951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1831071541
 RectTransform:
   m_ObjectHideFlags: 0
@@ -81785,7 +82020,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1831071540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44d8bb986fd27514797f947e9017b85d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e88690e8b997e745aebe46962cee613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1832246712
@@ -82732,7 +82967,6 @@ GameObject:
   - component: {fileID: 1850017288}
   - component: {fileID: 1850017290}
   - component: {fileID: 1850017289}
-  - component: {fileID: 1850017291}
   m_Layer: 5
   m_Name: Screen - Settings
   m_TagString: Untagged
@@ -82800,18 +83034,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850017287}
   m_CullTransparentMesh: 0
---- !u!114 &1850017291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850017287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81dc762a66464184e8121a8f348dd8b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1851019845
 GameObject:
   m_ObjectHideFlags: 0
@@ -83697,7 +83919,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -83710,8 +83932,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -83879,9 +84101,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865703023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a7c89c676d3c144eb04abf2f19df47c, type: 3}
+  m_Script: {fileID: 11500000, guid: e82e3012db183cc408fb6e9e73eec90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teamNameField: {fileID: 561165307}
+  logoDropdown: {fileID: 2095701027}
 --- !u!114 &1865703026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85042,7 +85266,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -85055,8 +85279,8 @@ MonoBehaviour:
   m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -85176,7 +85400,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -85188,9 +85412,9 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 514
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -85313,8 +85537,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1670044090}
   m_HandleRect: {fileID: 1670044089}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.73977643
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -87158,7 +87382,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -87171,8 +87395,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -87292,7 +87516,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -87305,8 +87529,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -87737,9 +87961,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1932112874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7528161693086854cae114d9792b2167, type: 3}
+  m_Script: {fileID: 11500000, guid: 81dd3bbf37b81324bbcbc2b02e0450da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groupListScrollRect: {fileID: 1446558376}
+  groupEntryPrefab: {fileID: 7332743119597471818, guid: 5c7369c7c7d4d2042a8cb92b67f92b9a, type: 3}
+  GroupEditorWindow: {fileID: 733962495}
+  titleLabel: {fileID: 1904782217}
 --- !u!114 &1932112877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88608,9 +88836,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1956952736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fdc0a566580074fa7d5afc8f2112ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 23264001dd6614b4cb8dee3638e8aa74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  scrollRect: {fileID: 1717324934}
+  iconTypeDropdown: {fileID: 1682638410}
+  badgeNameField: {fileID: 191099830}
+  badgeDescriptionField: {fileID: 944686014}
+  iconDropdown: {fileID: 1682638410}
+  iconPreview: {fileID: 1322042311}
+  standardIcons: []
+  defaultIcon: {fileID: 0}
+  clickToPreviewIcon: {fileID: 1394013378}
 --- !u!1 &1957482050
 GameObject:
   m_ObjectHideFlags: 0
@@ -89432,9 +89673,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1976624519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 570f578bc3b89fb41a41647523c91987, type: 3}
+  m_Script: {fileID: 11500000, guid: 2882ddab5c9967d44800fe6b55127222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  deckName: {fileID: 155088413}
+  listPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
+  questionsContainer: {fileID: 1638098767}
+  videoContainer: {fileID: 995643121}
+  modelContainer: {fileID: 2029009895}
+  slideShowContainer: {fileID: 15172943}
+  selectFileWindow: {fileID: 1385508020}
+  selectQuestionWindow: {fileID: 808578111}
+  editQuestionWindow: {fileID: 266928933}
+  videoURLInput: {fileID: 1807152385}
 --- !u!225 &1976624522
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -90150,7 +90405,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -90164,7 +90419,7 @@ MonoBehaviour:
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
-  m_textAlignment: 257
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -91816,7 +92071,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000030517578}
-  m_SizeDelta: {x: -3.1, y: 0}
+  m_SizeDelta: {x: -3.1, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2033171951
 MonoBehaviour:
@@ -92101,9 +92356,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2038108971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a09bfaf7ed79f246958c90eac9d8d27, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f06b72b257a0bb4797c1c615e9ca675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  listEntry: {fileID: 7517204021741182735, guid: f312da1943b0ba04489a2ca7e67ee1d0, type: 3}
+  scrollRect: {fileID: 257262924}
+  nameField: {fileID: 6881375}
+  descriptionField: {fileID: 338840046}
+  questionEditor: {fileID: 266928933}
+  badgeDropdown: {fileID: 1564874696}
+  badgeToggle: {fileID: 1303909328}
 --- !u!225 &2038108976
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -92329,7 +92595,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -92343,7 +92609,7 @@ MonoBehaviour:
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
-  m_textAlignment: 257
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -93008,9 +93274,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2058513285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89653ff185178204ca3b38ca36d449ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 797dbddf455aab84bbd1aa930a2fc75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  progressSlider: {fileID: 1079866155}
+  statusLabel: {fileID: 623326785}
+  filesScreen: {fileID: 1747938568}
+  closeWindowBtn: {fileID: 199685003}
 --- !u!225 &2058513288
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -93508,7 +93782,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -93521,8 +93795,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 513
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -95600,9 +95874,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2139964150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e8beff5f16b5e4d9b92798b22d0562, type: 3}
+  m_Script: {fileID: 11500000, guid: 680f617d2f56c2b4dae10fddab590094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scrollRect: {fileID: 290537108}
+  listEntryPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
+  themeEditorWindow: {fileID: 495888943}
 --- !u!1 &2143843159
 GameObject:
   m_ObjectHideFlags: 0
@@ -99065,9 +99342,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 3810621640052473794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b25ffc08f510b6e4197791d394791707, type: 3}
+  m_Script: {fileID: 11500000, guid: edd0f896e5546444abf6e9fd143cba97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  appearTransition: 1
+  disappearTransition: 1
+  closeOnBlockerClicked: 1
+  shown: 0
+  scrollRect: {fileID: 1961731694776778007}
+  levelListScrollRect: {fileID: 384115464}
+  themeDropdown: {fileID: 1804998242}
+  courseNameField: {fileID: 1294411505}
+  courseDescriptionField: {fileID: 1843912538}
+  levelListEntryPrefab: {fileID: 4010747565857277074, guid: e84643c2833a812419478f4ffecbe781, type: 3}
 --- !u!225 &3810621640052473796
 CanvasGroup:
   m_ObjectHideFlags: 0
